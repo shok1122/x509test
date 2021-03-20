@@ -9,8 +9,8 @@ mkdir $ca_dir/newcerts
 mkdir $ca_dir/private
 mkdir $ca_dir/cache
 touch $ca_dir/index.txt
-echo "01" > serial
-echo "00" > crlnumber
+echo "01" > $ca_dir/serial
+echo "00" > $ca_dir/crlnumber
 
 openssl genrsa \
     -passout pass:pass \
