@@ -1,0 +1,4 @@
+cache/*
+materials/*
+
+!.gitkeep
