@@ -13,6 +13,9 @@ gen_sub_ca 'tier2.net' 'tier2-openssl.cnf' '/C=JP/ST=Aichi/L=Nagoya/O=Tier2 CA/C
 banner 'Generate Tier3'
 gen_sub_ca 'tier3.net' 'tier3-openssl.cnf' '/C=JP/ST=Aichi/L=Nagoya/O=Tier3 CA/CN=tier3.net' 'tier2.net'
 
-banner 'Generate Tier4'
-gen_sub_ca 'tier4.net' 'tier4-openssl.cnf' '/C=JP/ST=Aichi/L=Nagoya/O=Tier4 CA/CN=tier4.net' 'tier3.net'
+banner 'Generate Tier4a'
+gen_sub_ca 'tier4a.net' 'tier4a-openssl.cnf' '/C=JP/ST=Aichi/L=Nagoya/O=Tier4a CA/CN=tier4a.net' 'tier3.net'
+
+banner 'Generate Tier4b'
+gen_sub_ca 'tier4b.net' 'tier4b-openssl.cnf' '/C=JP/ST=Aichi/L=Nagoya/O=Tier4b CA/CN=tier4b.net' 'tier3.net'
 

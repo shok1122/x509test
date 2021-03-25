@@ -5,6 +5,15 @@ banner()
     echo "+----------------------------------------------------+"
 }
 
+show_result()
+{
+    if [ $1 = 0 ]; then
+        echo '> OK'
+    else
+        echo '> NG'
+    fi
+}
+
 prepare_ca()
 {
     ca_dir="$1"

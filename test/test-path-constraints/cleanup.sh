@@ -14,7 +14,11 @@ banner 'Cleanup Tier3'
 clean_ca 'tier3.net'
 echo 'DONE.'
 
-banner 'Cleanup Tier4'
-clean_ca 'tier4.net'
+banner 'Cleanup Tier4a'
+clean_ca 'tier4a.net'
+echo 'DONE.'
+
+banner 'Cleanup Tier4b'
+clean_ca 'tier4b.net'
 echo 'DONE.'
 
