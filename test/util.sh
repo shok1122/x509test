@@ -1,3 +1,5 @@
+#!/bin/sh
+
 banner()
 {
     echo "+----------------------------------------------------+"
@@ -130,3 +132,14 @@ clean_ca()
 
     rm -rf $ca_dir
 }
+
+show_cert()
+{
+    openssl x509 -in "$1" -text -noout
+}
+
+if [ 'util.sh' = $(basename $0) ]; then
+    case "$1" in
+        show-cert ) show_cert "$2";;
+    esac
+fi
